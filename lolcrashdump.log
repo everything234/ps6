@@ -1,0 +1,2496 @@
+[02/25/19 17:44:24] - Running wine-3.4 --version (Working directory : /home/closer/.PlayOnLinux/shortcuts)
+wine-3.4
+
+PlayOnLinux logfile
+-------------------
+Date: 02/25/19 17:44:24
+
+> PlayOnLinux Version
+  4.2.12
+> uname -a
+  Linux closer-desktop 4.15.0-45-generic #48-Ubuntu SMP Tue Jan 29 16:28:13 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+> lsb_release -a
+  
+> wine --version
+  wine-3.4
+> POL_WINEVERSION
+  3.4
+> WINEPREFIX
+  /home/closer/.PlayOnLinux//wineprefix/PhotoshopCS6
+> Distribution
+  Ubuntu 18.04.2 LTS
+> glxinfo \| grep rendering
+  direct rendering: Yes
+> glxinfo \| grep renderer
+      GLX_MESA_multithread_makecurrent, GLX_MESA_query_renderer, 
+    GLX_MESA_query_renderer, GLX_MESA_swap_control, GLX_OML_swap_method, 
+Extended renderer info (GLX_MESA_query_renderer):
+OpenGL renderer string: NVE6
+> OpenGL libs (Direct rendering testing)
+  check_dd_x86 missing, test skipped
+  check_dd_amd64 missing, test skipped
+
+[02/25/19 17:44:35] - Running wine-3.4 cmd /c echo %ProgramFiles% (Working directory : /home/closer/.PlayOnLinux/shortcuts)
+0025:err:module:load_builtin_dll failed to load .so lib for builtin L"winebus.sys": libudev.so.0: nie można otworzyć pliku obiektu dzielonego: Nie ma takiego pliku ani katalogu
+0025:err:winedevice:async_create_driver failed to create driver L"WineBus": c0000142
+C:\Program Files
+[02/25/19 17:44:39] - ----- Starting function POL_Install_atmlib -----
+[02/25/19 17:44:39] - ----- Starting function POL_SP2_Extract -----
+[02/25/19 17:44:40] - ----- Ending function POL_SP2_Extract -----
+[02/25/19 17:44:40] - ----- Ending function POL_Install_atmlib -----
+[02/25/19 17:44:41] - ----- Starting function POL_Install_gdiplus -----
+[02/25/19 17:44:41] - Running wine-3.4 WindowsXP-KB975337-x86-ENU.exe /extract:C:\Tmp /q (Working directory : /home/closer/.PlayOnLinux/ressources)
+0026:err:module:load_builtin_dll failed to load .so lib for builtin L"winebus.sys": libudev.so.0: nie można otworzyć pliku obiektu dzielonego: Nie ma takiego pliku ani katalogu
+0026:err:winedevice:async_create_driver failed to create driver L"WineBus": c0000142
+0009:fixme:advapi:DecryptFileA ("C:\\Tmp\\", 00000000): stub
+[02/25/19 17:44:43] - Running wine-3.4 regedit /home/closer/.PlayOnLinux//tmp/override-dll.reg (Working directory : /home/closer/.PlayOnLinux/wineprefix/PhotoshopCS6/drive_c/Tmp)
+[02/25/19 17:44:43] - Content of /home/closer/.PlayOnLinux//tmp/override-dll.reg
+-----------
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Wine\DllOverrides]
+"*gdiplus"="native"
+-----------
+[02/25/19 17:44:43] - ----- Ending function POL_Install_gdiplus -----
+[02/25/19 17:44:43] - ----- Starting function POL_Install_msxml3 -----
+[02/25/19 17:44:43] - Running wine-3.4 regedit /home/closer/.PlayOnLinux//tmp/override-dll.reg (Working directory : /home/closer/.PlayOnLinux/ressources/msxml3)
+[02/25/19 17:44:43] - Content of /home/closer/.PlayOnLinux//tmp/override-dll.reg
+-----------
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Wine\DllOverrides]
+"*msxml3"="native"
+-----------
+[02/25/19 17:44:43] - Running wine-3.4 msiexec /i msxml3.msi /q (Working directory : /home/closer/.PlayOnLinux/ressources/msxml3)
+0034:fixme:ntdll:NtLockFile I/O completion on lock not implemented yet
+0037:fixme:setupapi:SetupQueryInfOriginalFileInformationW (0x8e13c8, 0, (nil), 0x8cd448): semi-stub
+0037:fixme:setupapi:SetupPromptReboot 0x1c26b8, (nil), 1: stub
+[02/25/19 17:44:48] - ----- Ending function POL_Install_msxml3 -----
+[02/25/19 17:44:48] - ----- Starting function POL_Install_msxml6 -----
+[02/25/19 17:44:48] - Running wine-3.4 msiexec /i msxml6_x86.msi /q (Working directory : /home/closer/.PlayOnLinux/ressources)
+0026:err:module:load_builtin_dll failed to load .so lib for builtin L"winebus.sys": libudev.so.0: nie można otworzyć pliku obiektu dzielonego: Nie ma takiego pliku ani katalogu
+0026:err:winedevice:async_create_driver failed to create driver L"WineBus": c0000142
+0009:fixme:ntdll:NtLockFile I/O completion on lock not implemented yet
+[02/25/19 17:44:49] - ----- Ending function POL_Install_msxml6 -----
+[02/25/19 17:44:49] - ----- Starting function POL_Install_vcrun2005 -----
+[02/25/19 17:44:49] - Running wine-3.4 start /unix vcredist_x86.exe /q (Working directory : /home/closer/.PlayOnLinux/ressources/vcrun2005)
+0035:fixme:advapi:DecryptFileA ("C:\\users\\closer\\Temp\\IXP000.TMP\\", 00000000): stub
+0039:fixme:advapi:DecryptFileA ("C:\\users\\closer\\Temp\\IXP001.TMP\\", 00000000): stub
+003d:fixme:ntdll:NtLockFile I/O completion on lock not implemented yet
+003d:fixme:msi:internal_ui_handler internal UI not implemented for message 0x0b000000 (UI level = 5)
+003d:fixme:msi:internal_ui_handler internal UI not implemented for message 0x0b000000 (UI level = 5)
+[02/25/19 17:44:54] - Running wine-3.4 regedit /home/closer/.PlayOnLinux//tmp/override-dll.reg (Working directory : /home/closer/.PlayOnLinux/ressources/vcrun2005)
+[02/25/19 17:44:54] - Content of /home/closer/.PlayOnLinux//tmp/override-dll.reg
+-----------
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Wine\DllOverrides]
+"*msvcr80"="native,builtin"
+-----------
+0026:err:module:load_builtin_dll failed to load .so lib for builtin L"winebus.sys": libudev.so.0: nie można otworzyć pliku obiektu dzielonego: Nie ma takiego pliku ani katalogu
+0026:err:winedevice:async_create_driver failed to create driver L"WineBus": c0000142
+[02/25/19 17:44:54] - ----- Ending function POL_Install_vcrun2005 -----
+[02/25/19 17:44:55] - ----- Starting function POL_Install_vcrun2008 -----
+[02/25/19 17:44:55] - Running wine-3.4 start /unix vcredist_x86.exe /q (Working directory : /home/closer/.PlayOnLinux/ressources/vcrun2008)
+002c:fixme:clusapi:GetNodeClusterState ((null),0x33ec54) stub!
+002c:fixme:advapi:DecryptFileA ("c:\\142a3b82dcbe5000e48299dfe8\\", 00000000): stub
+0034:fixme:heap:RtlSetHeapInformation (nil) 1 (nil) 0 stub
+0034:err:winediag:SECUR32_initNTLMSP ntlm_auth was not found or is outdated. Make sure that ntlm_auth >= 3.0.25 is in your path. Usually, you can find it in the winbind package of your distribution.
+0034:fixme:kerberos:kerberos_SpInstanceInit 65536,0x7da87a2c,(nil): stub
+0034:fixme:advapi:LsaOpenPolicy ((null),0x33f338,0x00000001,0x33f324) stub
+0034:fixme:advapi:GetWindowsAccountDomainSid (0x33f288 0x13ecec 0x33f284): semi-stub
+0034:fixme:secur32:GetComputerObjectNameW NameFormat 7 not implemented
+0034:fixme:advapi:LsaClose (0xcafe) stub
+0034:fixme:ntdll:NtLockFile I/O completion on lock not implemented yet
+[02/25/19 17:45:01] - Running wine-3.4 regedit /home/closer/.PlayOnLinux//tmp/override-dll.reg (Working directory : /home/closer/.PlayOnLinux/ressources/vcrun2008)
+[02/25/19 17:45:01] - Content of /home/closer/.PlayOnLinux//tmp/override-dll.reg
+-----------
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Wine\DllOverrides]
+"*msvcr90"="native,builtin"
+-----------
+0025:err:module:load_builtin_dll failed to load .so lib for builtin L"winebus.sys": libudev.so.0: nie można otworzyć pliku obiektu dzielonego: Nie ma takiego pliku ani katalogu
+0025:err:winedevice:async_create_driver failed to create driver L"WineBus": c0000142
+[02/25/19 17:45:01] - ----- Ending function POL_Install_vcrun2008 -----
+[02/25/19 17:45:01] - ----- Starting function POL_Install_vcrun2010 -----
+[02/25/19 17:45:01] - Running wine-3.4 start /unix vcredist_x86.exe /q (Working directory : /home/closer/.PlayOnLinux/ressources/vcrun2010)
+002c:fixme:clusapi:GetNodeClusterState ((null),0x33ebd4) stub!
+002c:fixme:advapi:DecryptFileA ("c:\\58be5c5d314d0e13a3\\", 00000000): stub
+0034:err:winediag:SECUR32_initNTLMSP ntlm_auth was not found or is outdated. Make sure that ntlm_auth >= 3.0.25 is in your path. Usually, you can find it in the winbind package of your distribution.
+0034:fixme:kerberos:kerberos_SpInstanceInit 65536,0x7dc34a2c,(nil): stub
+0034:fixme:ntdll:EtwRegisterTraceGuidsW (0x6cd15f38, 0x6cd20180, {e2821408-c59d-418f-ad3f-aa4e792aeb79}, 1, 0x33e960, (null), (null), 0x6cd20188): stub
+0034:fixme:ntdll:EtwRegisterTraceGuidsW   register trace class {e2821408-c59d-418f-ad3f-aa4e792aeb79}
+0034:fixme:heap:RtlSetHeapInformation (nil) 1 (nil) 0 stub
+0034:fixme:heap:RtlSetHeapInformation (nil) 1 (nil) 0 stub
+0034:fixme:thread:SetThreadStackGuarantee (0x33fbb8): stub
+0034:fixme:advapi:LsaOpenPolicy ((null),0x33f4a8,0x00000001,0x33f494) stub
+0034:fixme:advapi:GetWindowsAccountDomainSid (0x33f3f8 0x163d1c 0x33f3f4): semi-stub
+0034:fixme:secur32:GetComputerObjectNameW NameFormat 7 not implemented
+0034:fixme:advapi:LsaClose (0xcafe) stub
+0035:fixme:ntdll:NtLockFile I/O completion on lock not implemented yet
+0034:fixme:advapi:LsaOpenPolicy ((null),0x33f2f8,0x00000001,0x33f2e4) stub
+0034:fixme:advapi:GetWindowsAccountDomainSid (0x33f248 0xa8c6a4 0x33f244): semi-stub
+0034:fixme:secur32:GetComputerObjectNameW NameFormat 7 not implemented
+0034:fixme:advapi:LsaClose (0xcafe) stub
+0034:fixme:ntdll:EtwUnregisterTraceGuids deadbeef: stub
+[02/25/19 17:45:10] - Running wine-3.4 regedit /home/closer/.PlayOnLinux//tmp/override-dll.reg (Working directory : /home/closer/.PlayOnLinux/ressources/vcrun2010)
+[02/25/19 17:45:10] - Content of /home/closer/.PlayOnLinux//tmp/override-dll.reg
+-----------
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Wine\DllOverrides]
+"*msvcr100"="native,builtin"
+-----------
+0025:err:module:load_builtin_dll failed to load .so lib for builtin L"winebus.sys": libudev.so.0: nie można otworzyć pliku obiektu dzielonego: Nie ma takiego pliku ani katalogu
+0025:err:winedevice:async_create_driver failed to create driver L"WineBus": c0000142
+[02/25/19 17:45:10] - ----- Ending function POL_Install_vcrun2010 -----
+[02/25/19 17:45:10] - ----- Starting function POL_Install_corefonts -----
+[02/25/19 17:45:10] - ----- Starting function POL_Internal_InstallFonts -----
+[02/25/19 17:45:10] - ----- Ending function POL_Internal_InstallFonts -----
+[02/25/19 17:45:10] - ----- Ending function POL_Install_corefonts -----
+[02/25/19 17:45:11] - ----- Starting function POL_Install_tahoma2 -----
+[02/25/19 17:45:11] - Running wine-3.4 regedit register.reg (Working directory : /home/closer/.PlayOnLinux/tmp/tahoma32)
+[02/25/19 17:45:11] - Content of register.reg
+-----------
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Fonts]
+"Tahoma"="tahoma.ttf"
+"Tahoma Bold"="tahomabd.ttf"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Fonts]
+"Tahoma"="tahoma.ttf"
+"Tahoma Bold"="tahomabd.ttf"
+-----------
+[02/25/19 17:45:16] - ----- Ending function POL_Install_tahoma2 -----
+[02/25/19 17:45:16] - ----- Starting function POL_Install_FontsSmoothRGB -----
+[02/25/19 17:45:17] - ----- Starting function POL_Function_FontsSmoothRGB -----
+[02/25/19 17:45:17] - Running wine-3.4 regedit /home/closer/.PlayOnLinux//tmp/fontsaa.reg (Working directory : /home/closer/.PlayOnLinux/tmp)
+[02/25/19 17:45:17] - Content of /home/closer/.PlayOnLinux//tmp/fontsaa.reg
+-----------
+REGEDIT4
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"FontSmoothing"="2"
+"FontSmoothingType"=dword:00000002
+"FontSmoothingGamma"=dword:00000578
+"FontSmoothingOrientation"=dword:00000001
+-----------
+0025:err:module:load_builtin_dll failed to load .so lib for builtin L"winebus.sys": libudev.so.0: nie można otworzyć pliku obiektu dzielonego: Nie ma takiego pliku ani katalogu
+0025:err:winedevice:async_create_driver failed to create driver L"WineBus": c0000142
+[02/25/19 17:45:17] - ----- Ending function POL_Function_FontsSmoothRGB -----
+[02/25/19 17:45:17] - ----- Ending function POL_Install_FontsSmoothRGB -----
+[02/25/19 17:46:13] - Running wine-3.4 /AdobeAIRInstaller.exe (Working directory : /home/closer/.PlayOnLinux/tmp)
+wine: cannot find '/AdobeAIRInstaller.exe'
+[02/25/19 17:46:17] - Running wine-3.4 /home/closer/Pulpit/Portable_Adobe_Photoshop_CS6_Extended/PhotoshopCS6/Photoshop.exe (Working directory : /home/closer/.PlayOnLinux/tmp)
+0025:err:module:load_builtin_dll failed to load .so lib for builtin L"winebus.sys": libudev.so.0: nie można otworzyć pliku obiektu dzielonego: Nie ma takiego pliku ani katalogu
+0025:err:winedevice:async_create_driver failed to create driver L"WineBus": c0000142
+0009:fixme:actctx:parse_requested_execution_level_elem unknown attr L"xmlns:ms_asmv3"=L"urn:schemas-microsoft-com:asm.v3"
+0009:fixme:actctx:parse_requested_execution_level_elem unknown attr L"ms_asmv3:uiAccess"=L"false"
+0009:fixme:heap:RtlSetHeapInformation (nil) 1 (nil) 0 stub
+0009:err:shell:HCR_GetFolderAttributes should be called for simple PIDL's only!
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32fdbc 1 C) semi-stub
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32f2e8,0x00000000), stub!
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32f2ec 1 C) semi-stub
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32ea7c 1 C) semi-stub
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32e85c 1 C) semi-stub
+0009:fixme:ntdll:NtSetInformationToken unimplemented class 24
+0009:fixme:ole:CoInitializeSecurity ((nil),-1,(nil),(nil),0,3,(nil),0,(nil)) - stub!
+0009:fixme:wbemprox:client_security_SetBlanket 0xf778ed54, 0x6e90370, 10, 0, (null), 3, 3, (nil), 0x00000000
+0009:fixme:wbemprox:client_security_Release 0xf778ed54
+0035:fixme:heap:RtlSetHeapInformation (nil) 1 (nil) 0 stub
+0035:fixme:ole:CoInitializeSecurity ((nil),-1,(nil),(nil),0,3,(nil),0,(nil)) - stub!
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32ed2c 1 C) semi-stub
+0035:fixme:win:EnumDisplayDevicesW ((null),0,0x33f3d8,0x00000000), stub!
+0035:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x33fa2c 1 C) semi-stub
+0035:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x33f82c 1 C) semi-stub
+0035:fixme:win:EnumDisplayDevicesW ((null),0,0x33f208,0x00000000), stub!
+0035:fixme:win:EnumDisplayDevicesW ((null),1,0x33f208,0x00000000), stub!
+0035:fixme:win:EnumDisplayDevicesW ((null),0,0x33f3a8,0x00000000), stub!
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32ed2c 1 C) semi-stub
+0035:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x33f0bc 1 C) semi-stub
+0035:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x33f18c 1 C) semi-stub
+0035:fixme:win:EnumDisplayDevicesW ((null),0,0x33f658,0x00000000), stub!
+0035:fixme:win:EnumDisplayDevicesW ((null),0,0x33f7f8,0x00000000), stub!
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32ed2c 1 C) semi-stub
+0035:fixme:win:EnumDisplayDevicesW ((null),0,0x33f658,0x00000000), stub!
+0035:fixme:dxgi:dxgi_check_feature_level_support Ignoring adapter type.
+0035:fixme:winediag:dxgi_check_feature_level_support None of the requested D3D feature levels is supported on this GPU with the current shader backend.
+0035:fixme:win:EnumDisplayDevicesW ((null),0,0x33f5e8,0x00000000), stub!
+003c:fixme:ole:CoInitializeSecurity ((nil),-1,(nil),(nil),1,3,(nil),0,(nil)) - stub!
+0043:fixme:wia:wiadevmgr_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+0043:fixme:wia:wiadevmgr_QueryInterface interface {00000003-0000-0000-c000-000000000046} not implemented
+0043:fixme:wia:wiadevmgr_QueryInterface interface {00000019-0000-0000-c000-000000000046} not implemented
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32ed8c 1 C) semi-stub
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32ed8c 1 C) semi-stub
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32ed8c 1 C) semi-stub
+0009:fixme:dwmapi:DwmIsCompositionEnabled 0x32f334
+0009:fixme:wtsapi:WTSRegisterSessionNotification Stub 0x10058 0x00000001
+0009:fixme:win:DisableProcessWindowsGhosting : stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:msvcp:_Locinfo__Locinfo_ctor_cat_cstr (0x32f17c 1 C) semi-stub
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32eaf8,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),1,0x32eaf8,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32ec98,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32ef58,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32f0f8,0x00000000), stub!
+0009:fixme:wbemprox:client_security_SetBlanket 0xf778ed54, 0x6eb9630, 10, 0, (null), 3, 3, (nil), 0x00000000
+0009:fixme:wbemprox:client_security_Release 0xf778ed54
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32ec88,0x00000000), stub!
+0009:fixme:wbemprox:client_security_SetBlanket 0xf778ed54, 0x6ea4af0, 10, 0, (null), 3, 3, (nil), 0x00000000
+0009:fixme:wbemprox:client_security_Release 0xf778ed54
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32ed28,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32ed28,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32eec8,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32edd8,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32ef78,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32edd8,0x00000000), stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32ef78,0x00000000), stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:ole:CoResumeClassObjects stub
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+004f:err:ntdll:RtlpWaitForCriticalSection section 0x2d109c0 "?" wait timed out in thread 004f, blocked by 0009, retrying (60 sec)
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32dc28,0x00000000), stub!
+0009:fixme:font:get_outline_text_metrics failed to read full_nameW for font L"Ani"!
+0009:fixme:font:get_nearest_charset TCI failing on 20000000
+0009:fixme:font:get_nearest_charset returning DEFAULT_CHARSET face->fs.fsCsb[0] = 20000000 file = L"/usr/share/fonts/truetype/fonts-gujr-extra/aakar-medium.ttf"
+0009:fixme:driver:NamedEscape ((nil), L"ATMFDA.DLL", 9474, 0, (nil), 0, (nil))
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9474, 0, (nil), 0, (nil))
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32cffc, 194, 0x32cffc)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32cffc, 194, 0x32cffc)
+0009:fixme:font:get_nearest_charset TCI failing on 20000000
+0009:fixme:font:get_nearest_charset returning DEFAULT_CHARSET face->fs.fsCsb[0] = 20000000 file = L"/usr/share/fonts/truetype/fonts-gujr-extra/aakar-medium.ttf"
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32cf94, 194, 0x32cf94)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c2d0, 194, 0x32c2d0)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c224, 194, 0x32c224)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x3220c0, 194, 0x3220c0)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x321e40, 194, 0x321e40)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x321138, 194, 0x321138)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320eb8, 194, 0x320eb8)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320ecc, 194, 0x320ecc)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320c4c, 194, 0x320c4c)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320788, 194, 0x320788)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320508, 194, 0x320508)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f800, 194, 0x31f800)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f580, 194, 0x31f580)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f594, 194, 0x31f594)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f314, 194, 0x31f314)
+0009:fixme:dciman:DCICreatePrimary 0x10047 0x4fb141c
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32d890, 194, 0x32d890)
+0009:fixme:font:get_nearest_charset TCI failing on 20000000
+0009:fixme:font:get_nearest_charset returning DEFAULT_CHARSET face->fs.fsCsb[0] = 20000000 file = L"/usr/share/fonts/truetype/fonts-gujr-extra/aakar-medium.ttf"
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:GetCharacterPlacementW flags 0x08080132 ignored
+0009:fixme:font:GetCharacterPlacementW classes not implemented
+0009:fixme:font:get_nearest_charset TCI failing on 20000000
+0009:fixme:font:get_nearest_charset returning DEFAULT_CHARSET face->fs.fsCsb[0] = 20000000 file = L"/usr/share/fonts/truetype/fonts-gujr-extra/aakar-medium.ttf"
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:imm:ImmReleaseContext (0x10e70, 0x72341c0): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f428) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f428) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32dba8,0x00000000), stub!
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32cf08, 194, 0x32cf08)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c244, 194, 0x32c244)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c198, 194, 0x32c198)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x322034, 194, 0x322034)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x321db4, 194, 0x321db4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x3210ac, 194, 0x3210ac)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320e2c, 194, 0x320e2c)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320e40, 194, 0x320e40)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320bc0, 194, 0x320bc0)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x3206fc, 194, 0x3206fc)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32047c, 194, 0x32047c)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f774, 194, 0x31f774)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f4f4, 194, 0x31f4f4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f508, 194, 0x31f508)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f288, 194, 0x31f288)
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee58) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee58) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee58) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ea28) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32e9d8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32e448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32ee58) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f148) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f428) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee58) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32e798) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32dc28,0x00000000), stub!
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32cf94, 194, 0x32cf94)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c2d0, 194, 0x32c2d0)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c224, 194, 0x32c224)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x3220c0, 194, 0x3220c0)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x321e40, 194, 0x321e40)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x321138, 194, 0x321138)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320eb8, 194, 0x320eb8)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320ecc, 194, 0x320ecc)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320c4c, 194, 0x320c4c)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320788, 194, 0x320788)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320508, 194, 0x320508)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f800, 194, 0x31f800)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f580, 194, 0x31f580)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f594, 194, 0x31f594)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f314, 194, 0x31f314)
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32ee58) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32dba8,0x00000000), stub!
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32cf08, 194, 0x32cf08)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c244, 194, 0x32c244)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c198, 194, 0x32c198)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x322034, 194, 0x322034)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x321db4, 194, 0x321db4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x3210ac, 194, 0x3210ac)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320e2c, 194, 0x320e2c)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320e40, 194, 0x320e40)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320bc0, 194, 0x320bc0)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x3206fc, 194, 0x3206fc)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32047c, 194, 0x32047c)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f774, 194, 0x31f774)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f4f4, 194, 0x31f4f4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f508, 194, 0x31f508)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f288, 194, 0x31f288)
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32ee58) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f148) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee58) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32e798) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f408) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f408) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f428) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32efe0) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ef30) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee58) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32dc28,0x00000000), stub!
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32cf94, 194, 0x32cf94)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c2d0, 194, 0x32c2d0)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c224, 194, 0x32c224)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c4a4, 194, 0x32c4a4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x3220c0, 194, 0x3220c0)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x321e40, 194, 0x321e40)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x321138, 194, 0x321138)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320eb8, 194, 0x320eb8)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320ecc, 194, 0x320ecc)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320c4c, 194, 0x320c4c)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320788, 194, 0x320788)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320508, 194, 0x320508)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f800, 194, 0x31f800)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f580, 194, 0x31f580)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f594, 194, 0x31f594)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f314, 194, 0x31f314)
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f428) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:EnumDisplayDevicesW ((null),0,0x32dba8,0x00000000), stub!
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32cf08, 194, 0x32cf08)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c244, 194, 0x32c244)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c198, 194, 0x32c198)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32c418, 194, 0x32c418)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x322034, 194, 0x322034)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x321db4, 194, 0x321db4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x3210ac, 194, 0x3210ac)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320e2c, 194, 0x320e2c)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320e40, 194, 0x320e40)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x320bc0, 194, 0x320bc0)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x3206fc, 194, 0x3206fc)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x32047c, 194, 0x32047c)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f774, 194, 0x31f774)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f4f4, 194, 0x31f4f4)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f508, 194, 0x31f508)
+0009:fixme:driver:NamedEscape ((nil), L"ATMFD.DLL", 9483, 194, 0x31f288, 194, 0x31f288)
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32a4e0) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32a430) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32a460) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32a3b0) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32e910) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32e860) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32e910) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32e860) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:appbar:SHAppBarMessage unknown msg: 4
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETSTATE): stub
+002a:fixme:appbar:handle_appbarmessage SHAppBarMessage(ABM_GETTASKBARPOS, hwnd=(nil)): stub
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f428) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f428) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f418) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f3e8) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f428) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32ee88) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:LockWindowUpdate (0x10058), partial stub!
+0009:fixme:win:LockWindowUpdate ((nil)), partial stub!
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f448) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f408) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f438) semi-stub: forwarding to GetCursorPos
+0009:fixme:win:GetPhysicalCursorPos (0x32f410) semi-stub: forwarding to GetCursorPos
